@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "docker-parallel-runner"
+version = "0.1.0"
+description = "Run Docker containers in parallel using threads and subprocess"
+# readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+docker-runner = "docker_runner:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
