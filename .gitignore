@@ -161,3 +161,6 @@ ehthumbs.db
 *.swp
 *.swo
 *~
+
+# Obsidian
+.obsidian/
